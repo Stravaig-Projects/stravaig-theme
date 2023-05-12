@@ -10,6 +10,11 @@
 				"eamodio.gitlens"
 			]
 		}
+	},
+	"portsAttributes": {
+		"4000": {
+			"label": "jekyll-server"
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
