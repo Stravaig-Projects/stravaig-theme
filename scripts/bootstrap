@@ -4,3 +4,7 @@ set -e
 
 gem install bundler
 bundle install
+
+SCRIPT_DIR=$( dirname "$0" )
+
+pwsh -File "$SCRIPT_DIR/copy-bootstrap.ps1"
