@@ -1,2 +1,18 @@
-@import "bootstrap/bootstrap"
+
+
+@import "bootstrap/bootstrap";
+
+body {
+    background-color: $indigo-100;
+};
+
+.page-header{
+    background-color: $indigo-900;
+    color: $gray-100;
+};
+
+.page-footer {
+    background-color: $indigo-900;
+    color: $gray-100;
+};
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
     <head>
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,14 @@
         <title>{{ page.title }}</title>
     </head>
     <body>
-        {{ content }}
-
-        <script src="{{ '/assets/js/bootstrap.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+        {%- include header.html -%}
+        
+        <div class="container-lg">
+            {{ content }}
+        </div>
+        
+        {%- include footer.html -%}
+        <script src="{{ '/assets/js/bootstrap/bootstrap.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
     </body>
 </html>
 
