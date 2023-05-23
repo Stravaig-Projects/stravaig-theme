@@ -119,6 +119,20 @@ end
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
+Here is some text with a footnote[^1]. The footnote will appear at the end of the content section.
+
+There now follows a code block defined as C#
+```csharp
+public class MyCode
+{
+    public int _someField;
+    public bool SomeProperty { get; set; }
+
+    public string SomeMethod(decimal someArgument)
+    {
+      var result = (_someField + someArgument).ToString();
+    }
+}
 ```
-The final element.
-```
+
+[^1]: This is the footnote text.
