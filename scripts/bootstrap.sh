@@ -2,6 +2,8 @@
 
 set -e
 
+git config --global --add safe.directory /workspaces/stravaig-theme
+
 gem install bundler
 bundle install
 
