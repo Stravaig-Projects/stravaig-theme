@@ -125,15 +125,23 @@ Here is some text with a footnote[^2]. The footnote will appear at the end of th
 
 There now follows a code block defined as C#
 ```csharp
-public class MyCode
+using System;
+
+namespace My.Example.Namespace
 {
+  // This is my example class to show off syntax highlighting.
+  [SomeAttribute("SomeStringLiteral")]
+  public class MyCode : IMyCodeInterface
+  {
     public int _someField;
     public bool SomeProperty { get; set; }
 
     public string SomeMethod(decimal someArgument)
     {
-      var result = (_someField + someArgument).ToString();
+      var result = (_someField + someArgument + 123).ToString();
+      return result;
     }
+  }
 }
 ```
 

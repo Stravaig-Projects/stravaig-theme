@@ -5,6 +5,17 @@ $font-size-base: 1.33rem;
 @import "bootstrap/bootstrap";
 
 $stravaig-logo-colour: #6600FF;
+$stravaig-logo-100: tint-color($stravaig-logo-colour, 80%);
+$stravaig-logo-200: tint-color($stravaig-logo-colour, 60%);
+$stravaig-logo-300: tint-color($stravaig-logo-colour, 40%);
+$stravaig-logo-400: tint-color($stravaig-logo-colour, 20%);
+$straviag-logo-500: $stravaig-logo-colour;
+$stravaig-logo-600: shade-color($stravaig-logo-colour, 20%);
+$stravaig-logo-700: shade-color($stravaig-logo-colour, 40%);
+$stravaig-logo-800: shade-color($stravaig-logo-colour, 60%);
+$stravaig-logo-900: shade-color($stravaig-logo-colour, 80%);
+
+
 $stravaig-logo-colour-dark: shade-color($stravaig-logo-colour, 50%);
 $stravaig-logo-colour-vdark: shade-color($stravaig-logo-colour, 75%);
 $stravaig-logo-colour-light: tint-color($stravaig-logo-colour, 50%);
@@ -21,12 +32,46 @@ a {
     }
 }
 
+blockquote {
+    padding-left: 1rem;
+    border-left: $stravaig-logo-colour 3px solid;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $stravaig-logo-100;
+} 
+
 header {
     padding-top: 1rem;
     border-bottom: $stravaig-logo-colour-light 2px dashed;
     margin-bottom: 1rem;
     #logo {
         height: $h1-font-size + $headings-margin-bottom + $paragraph-margin-bottom + $font-size-base;
+    }
+}
+
+footer {
+    border-top: $stravaig-logo-colour-light 2px dashed;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+table {
+    border: $stravaig-logo-colour-light 1px solid;
+    background-color: $stravaig-logo-colour-vdark;
+    thead{
+        border-bottom: $stravaig-logo-colour-light 1px solid;
+        th {
+            padding: 0.5rem;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: $stravaig-logo-colour-dark 1px dotted;
+        }
+    }
+    td {
+        padding: 0.5rem;
     }
 }
 
@@ -37,8 +82,88 @@ header {
     margin-top: 1rem;
 }
 
-footer {
-    border-top: $stravaig-logo-colour-light 2px dashed;
-    padding-top: 1rem;
-    margin-top: 1rem;
-}
+
+// Code higlighting
+
+.highlight {
+
+    $plaintext: $gray-300;
+    $string: $yellow-300;
+    $literal: $orange-300;
+    $keyword: $green-400;
+    $error-foreground: $red-100;
+    $error-background: $red-900;
+    $comment: $cyan-700;
+    $preprocessor: $gray-400;
+    $name-space: $green-300;
+    $name-attribute: $green-300;
+    $operator: $green-500;
+    $keyword-type: $green-200;
+    $regex: $purple-200;
+    $string-escape: $purple-300;
+    $deleted: $gray-700;
+    $header: $gray-200;
+  
+    color: $plaintext;
+    background-color: $black;
+    padding: 0.5rem;
+  
+    table td { padding: 5px; }
+    table pre { margin: 0; }
+    .w {
+      color: $plaintext;
+    }
+    .err {
+      color: $error-foreground;
+      background-color: $error-background;
+    }
+    .c,  .cd,  .cm,  .c1,  .cs {
+      color: $comment;
+    }
+    .cp {
+      color: $preprocessor;
+    }
+    .o,  .ow {
+      color: $operator;
+    }
+    .p,  .pi {
+      color: $plaintext;
+    }
+    .gi {
+      color: $string;
+    }
+    .gd {
+      color: $deleted;
+    }
+    .gh {
+      color: $header;
+      font-weight: bold;
+    }
+    .k,  .kn,  .kp,  .kr,  .kv {
+      color: $keyword;
+    }
+    .kc, .kt, .kd {
+        color: $keyword-type;
+    }
+    .s,  .sb,  .sc,  .sd,  .s2,  .sh,  .sx,  .s1 {
+      color: $string;
+    }
+    .sr {
+      color: $regex;
+    }
+    .si, .se {
+      color: $string-escape;
+    }
+    .nt, .nn,  .nc, .no{
+      color: $name-space;
+    }
+    .na {
+      color: $name-attribute;
+    }
+    .m,  .mf,  .mh,  .mi,  .il,  .mo,  .mb,  .mx {
+      color: $literal;
+    }
+    .ss {
+      color: $string;
+    }
+  }
