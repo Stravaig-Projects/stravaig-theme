@@ -1,0 +1,9 @@
+title: Example site for the Stravaig Theme
+description: This is an example site for the Stravaig theme. It is intended to show how
+    the theme can be used and what it looks like.
+
+github:
+  repository_url: https://github.com/Stravaig-Projects/stravaig-theme
+
+nuget:
+  package_url: https://www.nuget.org/packages/Stravaig.Gedcom

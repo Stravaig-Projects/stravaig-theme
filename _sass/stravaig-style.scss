@@ -1,20 +1,44 @@
 
 
+$font-size-base: 1.33rem;
+
 @import "bootstrap/bootstrap";
 
-// body {
-//     background-color: $indigo-900;
-// };
+$stravaig-logo-colour: #6600FF;
+$stravaig-logo-colour-dark: shade-color($stravaig-logo-colour, 50%);
+$stravaig-logo-colour-vdark: shade-color($stravaig-logo-colour, 75%);
+$stravaig-logo-colour-light: tint-color($stravaig-logo-colour, 50%);
+$stravaig-logo-colour-vlight: tint-color($stravaig-logo-colour, 75%);
 
-// .page-header {
-//     background-color: $black;
-//     color: $gray-200;
-// };
+a {
+    color: $stravaig-logo-colour-light;
+    :hover {
+        color: $stravaig-logo-colour-vlight;
+    }
 
-// .page-footer {
-//     background-color: $black;
-//     color: $gray-200;
-//     padding-bottom:0;
-//     margin-bottom:0
-// };
+    h1{
+        text-decoration: none;
+    }
+}
 
+header {
+    padding-top: 1rem;
+    border-bottom: $stravaig-logo-colour-light 2px dashed;
+    margin-bottom: 1rem;
+    #logo {
+        height: $h1-font-size + $headings-margin-bottom + $paragraph-margin-bottom + $font-size-base;
+    }
+}
+
+.footnotes {
+    border: $stravaig-logo-colour-light 1px dotted;
+    background-color: $stravaig-logo-colour-vdark;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer {
+    border-top: $stravaig-logo-colour-light 2px dashed;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}

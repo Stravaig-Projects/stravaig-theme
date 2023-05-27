@@ -5,6 +5,8 @@ title: Example of all the styles
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
+Here is some text with a footnote[^1]. The footnote will appear at the end of the content section.
+
 [Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
@@ -119,7 +121,7 @@ end
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-Here is some text with a footnote[^1]. The footnote will appear at the end of the content section.
+Here is some text with a footnote[^2]. The footnote will appear at the end of the content section.
 
 There now follows a code block defined as C#
 ```csharp
@@ -136,3 +138,5 @@ public class MyCode
 ```
 
 [^1]: This is the footnote text.
+
+[^2]: This is a second footnote.

@@ -1,5 +1,24 @@
-<footer class="s-footer sticky-bottom">
+<footer>
     <div class="container-lg">
-        <p>This is the footer!</p>
+        <div class="row">
+            <div class="col">
+                {% unless site.github.repository_url? %}
+                    <a href="{{ site.github.repository_url }}">View on GitHub</a>
+                {% endunless %}
+            </div>
+            <div class="col">
+                {% unless site.nuget.url? %}
+                    <a href="{{ site.nuget.url }}">View on NuGet</a>
+                {% endunless %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Copyright &copy; {{ site.time | date: "%Y" }} Stravaig Projects.</p>
+            </div>
+            <div class="col">
+                <p>This documentation was last updated on:<br />{{ site.time | date: "%A, %d %B, %Y at %H:%M:%S %z"}}</p>
+            </div>
+        </div>
     </div>
 </footer>

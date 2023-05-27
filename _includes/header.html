@@ -1,5 +1,15 @@
-<header class="s-header navbar navbar-expand-lg sticky-top">
+<header>
     <div class="container-lg">
-        This is the header!
+        <div class="row">
+            <div class="col-auto">
+                <img id="logo" src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Stravaig Logo" />
+            </div>
+            <div class="col">
+                <a id="a-title" href="{{ '/' | relative_url }}">
+                    <h1>{{ site.title | default: site.github.repository_name }}</h1>
+                </a>
+                <p>{{ site.description | default: site.github.project_tagline }}</p>
+            </div>
+        </div>
     </div>
 </header>
