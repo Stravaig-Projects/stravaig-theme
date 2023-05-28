@@ -86,14 +86,14 @@ table {
 
 .highlight {
 
-    $plaintext: $gray-300;
+    $plaintext: $green-100;
     $string: $yellow-300;
     $literal: $orange-300;
     $keyword: $green-400;
     $error-foreground: $red-100;
     $error-background: $red-900;
-    $comment: $cyan-700;
-    $preprocessor: $gray-400;
+    $comment: $cyan-600;
+    $preprocessor: $pink-400;
     $name-space: $green-300;
     $name-attribute: $green-300;
     $operator: $green-500;

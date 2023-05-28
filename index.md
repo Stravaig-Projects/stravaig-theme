@@ -139,6 +139,9 @@ namespace My.Example.Namespace
     public string SomeMethod(decimal someArgument)
     {
       var result = (_someField + someArgument + 123).ToString();
+#if DEBUG
+      Console.WriteLine($"The result is {result}");
+#endif
       return result;
     }
 
