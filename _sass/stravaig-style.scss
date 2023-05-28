@@ -1,5 +1,7 @@
 
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 
+$font-family-monospace:       'Fira Code', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-size-base: 1.33rem;
 
 @import "bootstrap/bootstrap";
@@ -82,9 +84,6 @@ table {
     margin-top: 1rem;
 }
 
-
-// Code higlighting
-
 .highlight {
 
     $plaintext: $gray-300;
@@ -106,10 +105,30 @@ table {
   
     color: $plaintext;
     background-color: $black;
-    padding: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 1rem;
   
-    table td { padding: 5px; }
-    table pre { margin: 0; }
+    table {
+        border: 0;
+        background-color: $black;
+        tbody {
+            tr {
+                border:0;
+            }
+        }
+        td { 
+            padding: 5px;
+        }
+        .gl {
+            border-right: $stravaig-logo-colour 2px solid;
+            text-align: right;
+        }
+        pre { 
+            margin: 0;
+         }
+    } 
+
     .w {
       color: $plaintext;
     }

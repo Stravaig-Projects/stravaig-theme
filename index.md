@@ -141,6 +141,21 @@ namespace My.Example.Namespace
       var result = (_someField + someArgument + 123).ToString();
       return result;
     }
+
+    public int GetStringValueOrDefault(int? value, string defaultValue)
+    {
+      // This uses Fira Code as the font for code snippets
+      // So... LIGATURES!
+      // Arithmetic: ++ -- /= && || ||=
+      // Scope: -> => :: __
+      // Equality: == === != =/= !==
+      // Comarison: <= >= <=>
+      // Comments: /* */ // ///
+      // Escaped Characters: \n \\
+      // Bit operations: << <<< <<= >> >>> ..= |= ^=
+      // Hexadecimal: 0xFF
+      return value?.ToString() ?? defaultValue;
+    }
   }
 }
 ```
