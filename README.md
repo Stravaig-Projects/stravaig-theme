@@ -1,50 +1,26 @@
 # stravaig-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+## Working with this repo
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+This repo is designed to work inside a dev container.
 
-TODO: Delete this and the text above, and describe your gem
+### You will need
 
-## Installation
+Install the following to get started
 
-Add this line to your Jekyll site's `Gemfile`:
+* Docker
+* Visual Studio Code
 
-```ruby
-gem "stravaig-theme"
-```
+# Steps to set up your dev environment
 
-And add this line to your Jekyll site's `_config.yml`:
+* Clone the repo to your local drive.
+* Open the repo folder in Visual Studio Code
+* When the popup appears, click "Reopen in Container". This has the advantage of being able to edit files outside the container in your local file system and being able to reflect those changes instantly inside the container. For development like this the performance I/O boost by cloning inside the container is negligible.
+![Reopen in Container](.readme-images/Reopen-in-Container.png)
+* The first time it will take about a minute or so to pull down all the bits and pieces it needs to run.
+* To check it has everything, open a terminal inside Visual Studio code and at the prompt type `jekyll serve`
+![jekyll serve command](.readme-images/jekyll-serve.png)
+*  When the build cycle is complete, you'll see a popup that says "Your application running on port 4000 is available". And a button to "Open in Browser". Click that button.
+![Your Application is running on port 4000](.readme-images/your-application-is-running-on-port-4000.png)
+ 
 
-```yaml
-theme: stravaig-theme
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install stravaig-theme
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/stravaig-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `stravaig-theme.gemspec` accordingly.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
