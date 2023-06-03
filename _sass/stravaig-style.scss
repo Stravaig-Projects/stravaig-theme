@@ -39,6 +39,12 @@ blockquote {
     border-left: $stravaig-logo-colour 3px solid;
 }
 
+footer {
+  border-top: $stravaig-logo-colour-light 2px dashed;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6{
     color: $stravaig-logo-100;
 } 
@@ -52,10 +58,20 @@ header {
     }
 }
 
-footer {
-    border-top: $stravaig-logo-colour-light 2px dashed;
-    padding-top: 1rem;
-    margin-top: 1rem;
+hr {
+  border: 0;
+  opacity: 1;
+  height: 21pt;
+  background: url('../images/break.svg');
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+p {
+  code {
+    background-color: $black;
+    color: $green-200;
+  }
 }
 
 table {

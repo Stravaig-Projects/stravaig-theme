@@ -9,7 +9,8 @@
 			"extensions": [
 				"eamodio.gitlens",
 				"ms-vscode.powershell",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"DotJoshJohnson.xml"
 			]
 		}
 	},

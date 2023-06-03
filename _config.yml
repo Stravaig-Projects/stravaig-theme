@@ -2,11 +2,14 @@ title: Example site for the Stravaig Theme
 description: This is an example site for the Stravaig theme. It is intended to show how
     the theme can be used and what it looks like.
 
+exclude:
+  - scripts
+
 kramdown:
-    highlighter: rouge
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 github:
   repository_url: https://github.com/Stravaig-Projects/stravaig-theme
