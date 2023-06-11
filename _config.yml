@@ -15,4 +15,8 @@ github:
   repository_url: https://github.com/Stravaig-Projects/stravaig-theme
 
 nuget:
-  package_url: https://www.nuget.org/packages/Stravaig.Gedcom
+  # url: https://www.nuget.org/packages/Stravaig.Gedcom
+  urls:
+    # - https://www.nuget.org/packages/Stravaig.Configuration.Diagnostics.Core
+    # - https://www.nuget.org/packages/Stravaig.Configuration.Diagnostics.Logging
+    - https://www.nuget.org/packages/Stravaig.Configuration.Diagnostics.Serilog

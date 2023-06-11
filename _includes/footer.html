@@ -2,14 +2,21 @@
     <div class="container-lg">
         <div class="row">
             <div class="col">
-                {% unless site.github.repository_url? %}
-                    <a href="{{ site.github.repository_url }}">View on GitHub</a>
-                {% endunless %}
+                {% if site.github.repository_url %}
+                    <a href="{{ site.github.repository_url }}" target="_blank">View on GitHub.</a>
+                {% endif %}
             </div>
             <div class="col">
-                {% unless site.nuget.url? %}
-                    <a href="{{ site.nuget.url }}">View on NuGet</a>
-                {% endunless %}
+                {% if site.nuget.url %}
+                    <a href="{{ site.nuget.url }}">View on NuGet.</a>
+                {% elsif site.nuget.urls %}
+                    View on Nuget:
+                <ul>
+                    {% for url in site.nuget.urls %}
+                        <li><a href="{{ url }}" target="_blank">{{ url | split:"/" | last }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
             </div>
         </div>
         <div class="row">
